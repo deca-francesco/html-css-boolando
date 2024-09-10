@@ -1,0 +1,65 @@
+/* #region common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+:root {
+    --bool-primary: #ff6900;
+    --bool-light-bg: #e0e0e0;
+    --bool-dark: #1a1a1a;
+    --bool-sale: #ff0000;
+    --bool-eco: #008000;
+}
+/* #endregion common */
+
+/* #region debug */
+.debug * {
+    border: 1px dashed black;
+}
+
+/* header */
+.debug header {
+    height: 50px;
+}
+
+/* main */
+.debug main {
+
+}
+/* #endregion debug */
+
+
+/* #region utilities */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* #endregion utilities */
+
+
+/* #region header */
+header {
+    
+}
+
+
+/* #endregion header */
+
+/* #region main */
+
+/* #endregion main */
+
+/* #region footer */
+
+/* #endregion footer */
