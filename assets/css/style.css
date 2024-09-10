@@ -108,6 +108,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 10000;
+    padding: 0.3rem 0;
 
     .container {
         align-items: center;
@@ -122,7 +123,7 @@ header {
     }
 
     .logo>img {
-        height: 80%;
+        height: 50px;
     }
 
     .links {
@@ -149,6 +150,7 @@ main {
     .card {
         position: relative;
         width: 30%;
+        margin: 3rem 0 1.5rem 0;
 
         .picture img:last-child {
             display: none;
@@ -207,6 +209,11 @@ main {
 
     }
 
+    .card.sweater .sustainable {
+        left: 0;
+    }
+
+
 }
 
 
@@ -215,6 +222,7 @@ main {
 /* #region footer */
 footer {
     background-color: var(--bool-dark);
+    padding: 1rem 0;
 
     .container {
         justify-content: space-between;
@@ -223,6 +231,24 @@ footer {
 
     .info, .socials {
         width: calc(100% / 3);
+    }
+
+    h5 {
+        font-size: 0.7rem;
+        color: white;
+    }
+
+    .info li {
+        font-size: 0.5rem;
+    }
+
+    .socials {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .socials li {
+        margin-left: 0.3rem;
     }
 
 }
