@@ -9,6 +9,11 @@ img {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 :root {
     --bool-primary: #ff6900;
     --bool-light-bg: #e0e0e0;
@@ -25,19 +30,58 @@ img {
 
 /* header */
 .debug header {
-    height: 50px;
+    height: 60px;
+
 }
 
 /* main */
-.debug main {
+.debug main .container {
+    height: 1000px;
+
+    .card {
+        height: 380px;
+        width: 200px;
+
+        .picture {
+            height: 300px;
+        }
+
+        .brand, .name, .price_red, .price_old {
+            height: 20px;
+        }
+
+        .favorite {
+            width: 30px;
+            height: 20px;
+        }
+
+        .sale, .sustainable {
+            width: 30px;
+            height: 15px;
+        }
+
+
+    }
 
 }
-/* #endregion debug */
 
+/* footer */
+.debug footer .container {
+    height: 60px;
+    
+    .info, .socials {
+        background-color: orange;
+        height: 60px;
+    }
+
+}
+
+
+/* #endregion debug */
 
 /* #region utilities */
 .container {
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 
@@ -45,21 +89,86 @@ img {
     display: flex;
 }
 
+.list-unstyled {
+    list-style: none;
+}
+
 /* #endregion utilities */
 
 
 /* #region header */
 header {
-    
+    background-color: var(--bool-primary);
+
+    .container {
+        align-items: center;
+    }
+
+    .gender, .logo, .links {
+        width: calc(100% / 3);
+    }
+
+    .links {
+        justify-content: end;
+        
+        li {
+            margin-left: 0.2rem;
+        }
+    }
+
 }
 
 
 /* #endregion header */
 
 /* #region main */
+main {
+    .container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card {
+        background-color: var(--bool-light-bg);
+        position: relative;
+
+        .favorite {
+            position: absolute;
+            top: 3%;
+            right: 0;
+        }
+
+        .sale, .sustainable {
+            position: absolute;
+            bottom: 30%;
+            left: 0;
+        }
+
+        .sustainable {
+            left: 20%;
+        }
+
+    }
+
+}
+
 
 /* #endregion main */
 
 /* #region footer */
+footer {
+    background-color: var(--bool-dark);
+
+    .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .info, .socials {
+        width: calc(100% / 3);
+    }
+
+}
 
 /* #endregion footer */
